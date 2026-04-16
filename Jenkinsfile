@@ -11,7 +11,7 @@ pipeline {
         stage('Prod') {
             steps {
                 echo 'Hello, Im Prod from Test Branch'
-                sh 'python --version'
+                sh 'python3 --version'
             }
         }  
         stage('test') {
