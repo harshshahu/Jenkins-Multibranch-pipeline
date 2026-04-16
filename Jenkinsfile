@@ -4,19 +4,19 @@ pipeline {
     stages {
         stage('dev') {
             steps {
-                echo 'Hello, Im Dev from Dev Branch'
+                echo 'Hello, Im Dev from Test Branch'
                 sh 'git --version'
             }
         }
         stage('Prod') {
             steps {
-                echo 'Hello, Im Prod from Dev Branch'
+                echo 'Hello, Im Prod from Test Branch'
                 sh 'python --version'
             }
         }  
         stage('test') {
             steps {
-                echo 'Hello, Im Test from Dev Branch'
+                echo 'Hello, Im Test from Test Branch'
                 sh 'docker --version'
             }
         }
